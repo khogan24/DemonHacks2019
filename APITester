@@ -1,0 +1,62 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+//<! key = Bp3C5aECiQ5gqEkyC83LNhqV6>
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>
+        </p>
+		<a
+			className = "CTA-API"
+			href = "http://www.ctabustracker.com/bustime/api/v2/getpredictions/?key=Bp3C5aECiQ5gqEkyC83LNhqV6&stpid=5027&format=json"
+			>
+			get pred
+
+		</a>
+		<a
+			className = "CTA-API"
+			href = "http://www.ctabustracker.com/bustime/api/v2/getvehicles/?key=Bp3C5aECiQ5gqEkyC83LNhqV6&vid=1721&format=json"
+			>
+			get vehic
+
+		</a>
+		<a
+			className = "CTA-API"
+			href = "http://www.ctabustracker.com/bustime/api/v2/getstops/?key=Bp3C5aECiQ5gqEkyC83LNhqV6&&dir=Southbound&format=json"
+			>
+			get stops
+
+		</a>
+		<a
+			className = "CTA-API"
+			href = "http://www.ctabustracker.com/bustime/api/v2/getdirections/?key=Bp3C5aECiQ5gqEkyC83LNhqV6&rt=9&format=json"
+			>
+			getDir
+
+		</a>
+		<a
+			className = "CTA-API"
+			href = "http://www.ctabustracker.com/bustime/api/v2/getroutes/?key=Bp3C5aECiQ5gqEkyC83LNhqV6&rt=9&format=json"
+			>
+			get routes
+
+		</a>
+		
+		<form>
+		
+			<label>
+				Bus Stop ID Number  ->  
+				<input type="text" name="name" />
+			</label>
+  
+			<input type="submit" value="Submit" />
+		</form>
+      </header>
+    </div>
+  );
+}
+
+export default App;
